@@ -1,0 +1,576 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Default style, feel free to remove if not needed. */
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+/* Div layer for the entire banner. */
+#container_dc {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #fff !important;
+}
+#content_dc {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  background: #00afbe;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+#lockup {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  border: 1px solid #333333;;
+  background: white;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
+#bgFade {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+  z-index: 9994;
+}
+/* Animation Frames Start */
+#bgHotspot {
+  display: block;
+  width: 300px;
+  height: 250px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+#logoTeal {
+  position: absolute;
+  top: 10px;
+  left: 108px;
+  z-index: 1;
+  width: 85px;
+  height: 45px;
+}
+#logoTeal img {
+  width: 85px;
+  height: 45px;
+}
+#landingTitle {
+  position: absolute;
+  top: 62px;
+  left: 57px;
+  width: 186px;
+  font-size: 20px;
+  /*	font-weight: 900;*/
+  line-height: 1.1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0;
+}
+#footNote {
+  position: absolute;
+  bottom: 14px;
+  left: 35px;
+  width: 231px;
+  /*	-webkit-text-stroke: 0.4px #cfcfcf;*/
+  /*	text-shadow: -1px 0 #979797, 0 1px #979797, 1px 0 #979797, 0 -1px #979797;*/
+  /*	text-shadow: -1px -1px 0 #979797, 1px -1px 0 #979797, -1px 1px 0 #979797, 1px 1px 0 #979797;*/
+  /*	text-shadow: 0 0 1px #979797, 0 0 1px #979797, 0 0 1px #979797, 0 0 1px #979797, 0 0 1px #979797;*/
+  font-size: 8px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0;
+}
+#character {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+#character img {
+  width: 109px;
+  height: 250px;
+}
+#footerPI {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 200px;
+  height: 20px;
+  background: #C1C1C1;
+  font-size: 11px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  /* padding: 5px 0; */
+  z-index: 9999;
+}
+#footerPI a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
+}
+#footerPI img {
+  width: 7px;
+  height: 7px;
+  position: relative;
+  top: 1px;
+  left: 3px;
+}
+#title1 {
+  position: absolute;
+  left: 76px;
+  top: 30px;
+  width: 224px;
+  font-size: 20px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  opacity: 0;
+  box-shadow: 0px 0px 17px 11px #fff;
+  background: rgba(255, 255, 255, 0.8);
+  padding-bottom: 20px;
+}
+#title1 sup {
+  font-size: 12px;
+  line-height: 14px;
+  vertical-align: top;
+}
+.blueText {
+  color: #1a1a1a;
+}
+.orangeText {
+  color: #ed8b00;
+  display: block;
+}
+.titleSmall {
+  display: block;
+  font-size: 7px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: -0.09px;
+  color: #333333;
+  /*	-webkit-text-stroke: 0.4px #979797;*/
+}
+#character1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+#character1 img {
+  width: 165px;
+  height: 126px;
+}
+#title2 {
+  position: absolute;
+  left: 97px;
+  top: 12px;
+  width: 194px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: normal;
+  opacity: 0;
+  box-shadow: 0px 0px 17px 11px #fff;
+  background: rgba(255, 255, 255, 0.8);
+}
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 98px;
+  opacity: 0;
+  z-index: 1;
+}
+#logo img {
+  width: 104px;
+  height: 64px;
+}
+#viewCta {
+  position: absolute;
+  top: 81px;
+  left: 71px;
+  opacity: 0;
+  width: 165px;
+  height: auto;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 14px;
+  text-align: center;
+  background: #00afbe;
+  padding: 10px 0;
+}
+.pb18 {
+  padding-bottom: 18px;
+}
+.pb6 {
+  padding-bottom: 6px;
+}
+/* Animation Frames End */
+/* SCROLLING ISI Start*/
+.horizontal-only {
+  height: auto;
+  max-height: 250px;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+  /*background-color: rgba(216, 216, 216, 0.32) !important;*/
+  width: 3px !important;
+  border-radius: 0px !important;
+  margin-right: 10px
+}
+.mCSB_scrollTools {
+  width: 9.6px !important;
+  right: -3px !important;
+  top: 19px;
+  height: 69px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #777777 !important;
+  border-radius: 0px !important;
+  width: 3px;
+  margin-right: 10px;
+}
+#scroll_content {
+  position: absolute;
+  width: 198px;
+  height: 90px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 999999;
+  overflow: hidden;
+  opacity: 1;
+  font-family: "arial" !important;
+}
+#scroll_container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 198px;
+  height: 90px;
+  opacity: 1;
+  background: #ffffff;
+}
+.scroll-pane {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 198px;
+  height: 90px;
+  overflow: auto;
+  overflow: hidden;
+}
+#isiHeader {
+  position: absolute;
+  width: 298px;
+  height: auto;
+  background-color: #ffffff;
+  top: 2px;
+  left: 0px;
+  z-index: 12;
+  /* border-top: 1px solid #898a8d; */
+  /* border-bottom: 1px solid #898a8d; */
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #902460;
+  padding: 6px 0px 5px 17px;
+  box-sizing: border-box;
+}
+.logo-hotspot, #piHotspot, #fdaHotspot, #piHotspotFooter {
+  color: #fff; /* width: 100px; */
+}
+.footer {
+  display: inline-block;
+  padding: 9px 0 0px;
+}
+.footer .logo-hotspot {
+  float: left;
+  padding-right: 15px;
+}
+.footerText {
+  width: 165px;
+  float: left;
+}
+.footerText p {
+  font-size: 8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #333333;
+}
+.pb0 span {
+  border-bottom: 1px solid #ed8b00;
+  color: #ed8b00;
+}
+.pi span, .fda span {
+  color: #ed8b00;
+  text-decoration: underline;
+}
+.pt-4 {
+  padding-top: 4px;
+}
+.pt-5 {
+  padding-top: 5px;
+}
+.pb-3 {
+  padding-bottom: 3px;
+}
+.pb-5 {
+  padding-bottom: 5px;
+}
+.pb-6 {
+  padding-bottom: 6px;
+}
+.pb-7 {
+  padding-bottom: 7px;
+}
+.pb-8 {
+  padding-bottom: 8px;
+}
+.pb-10 {
+  padding-bottom: 8px;
+  padding-top: 33px;
+}
+.pb-4 {
+  padding-bottom: 4px;
+}
+.pb-20 {
+  padding-bottom: 1px;
+}
+/* Scrolling ISI */
+.uppercase {
+  text-transform: none;
+}
+.boldtext {
+  font-weight: bold;
+}
+h1 {
+  color: #333333;
+  font-size: 7.3px;
+  line-height: 1;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-weight: bold;
+}
+p {
+  font-size: 7.3px;
+  line-height: 1.2;
+  color: #333333;
+}
+sub {
+  font-size: 60%;
+  vertical-align: bottom;
+  line-height: 1.5em;
+}
+sup {
+  font-size: 70%;
+  line-height: 7px;
+  vertical-align: top;
+}
+.tm {
+  font-size: 100%;
+  line-height: 1.2em;
+}
+#element1 {
+  padding: 6px 1px 0 10px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333333;
+}
+.jspArrow {
+  width: 8px;
+  margin: 0 auto;
+  display: block;
+  background-size: 100%;
+  background-position: center;
+  height: 8px !important;
+}
+.jspVerticalBar {
+  width: 4px;
+  right: 0;
+  bottom: 0;
+}
+.jspDrag {
+  border-radius: 10px;
+  background-color: #898989;
+}
+.ul-disc-bullet {
+  float: left;
+  display: block;
+  margin-left: -1px;
+}
+.ul-disc-bullet li {
+  float: left;
+  display: block;
+  padding: 0 0 3px 12px;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+   color: #333333;
+  position: relative;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ul-disc-bullet li:last-of-type {
+  padding: 0 0 0px 11px;
+}
+.ul-disc-bullet li:before {
+  /*
+	width: 4px;
+	height: 4px;
+	background: #000000;
+	border-radius: 100%;
+	content: "";
+	position: absolute;
+	top: 2.5px;
+	left: 1px;
+*/
+  content: "•";
+  position: absolute;
+  top: -0.6px;
+  left: 1px;
+  font-size: 11px;
+  color: #333333;
+}
+.ul-disc-bullet li ul {
+  padding-top: 5px;
+  overflow: hidden;
+}
+.ul-disc-bullet li ul li {
+  padding: 0 0 5px 15px;
+}
+.ul-disc-bullet li ul li:before {
+  /*
+    width: 5px;
+    height: 1px;
+*/
+  top: 2px;
+  border-radius: 100%;
+  background: transparent;
+  content: "°";
+  position: absolute;
+  left: 0;
+}
+.ul-disc-bullet li ul li:last-of-type {
+  padding: 0 0 0px 15px !important;
+}
+.letterSp {
+  letter-spacing: -0.05px !important;
+}
+.pb-2 {
+  padding-bottom: 10px;
+}
+.ul-disc li {
+  float: left;
+  display: block;
+  padding: 0 0 5px 12px;
+  font-size: 10px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #333333;
+  position: relative;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ul-disc li:last-of-type {
+  padding: 0 0 5px 12px;
+}
+.ul-disc li:before {
+  /*
+	width: 4px;
+	height: 4px;
+	background: #31566e;
+	border-radius: 100%;
+	content: "";
+	position: absolute;
+	top: 2.5px;
+	left: 1px;
+*/
+  content: "•";
+  position: absolute;
+  top: -0.6px;
+  left: 1px;
+  font-size: 12px;
+color: #333333;
+}
+.ul-disc li span {
+  font-weight: bold;
+  display: block;
+  padding-bottom: 3px;
+}
+.footnote {
+  width: 261px;
+  height: 20px;
+  font-size: 8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #000000;
+}
+.isi_head {
+  font-size: 7.3px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-top: 0px;
+  text-transform: uppercase;
+}
+.astellas-logo {
+  width: 63px;
+}
