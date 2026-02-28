@@ -1,349 +1,422 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML5 Digital Advertising Portfolio</title>
-    <meta
-      name="description"
-      content="A stunning portfolio showcasing high-performance, animated HTML5 digital banner ads of various standard sizes."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Yadav — Frontend Engineer · GSAP & HTML5 Ad Specialist</title>
+  <meta name="description" content="Aman Yadav — Frontend Engineer specializing in GSAP-powered HTML5 Rich Media. 200+ optimized creatives delivered under 150kb, 100% ad-network compliant." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- ── NAV ──────────────────────────────────────────── -->
+  <nav class="nav" id="top">
+    <div class="nav-logo">Aman Yadav</div>
+    <div class="nav-links">
+      <a href="#featured">Featured Work</a>
+      <a href="#iteration">Iterations</a>
+      <a href="#stack">Tech Stack</a>
+      <a href="#contact" class="nav-cta">Let's Talk →</a>
+    </div>
+  </nav>
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Background glowing effects -->
-    <div class="background-effect glow-1"></div>
-    <div class="background-effect glow-2"></div>
+  <!-- ── HERO ─────────────────────────────────────────── -->
+  <header class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="avail-dot"></span>
+        <span>Available for immediate engagement</span>
+      </div>
 
-    <header class="portfolio-header">
-        <div class="badge">Aman Yadav</div>
-        <h1>Motion & Creative Designer (HTML5) · Frontend Developer</h1>
-        <p class="one-liner">I design and build high-performance HTML5 animated ads and interactive web experiences, with deep experience in GSAP animation, ad-tech compliance, and rapid campaign iteration.</p>
-        <p class="credibility-line">Selected work from 200+ HTML5 display banners delivered across multiple campaigns, formats, and refresh cycles for global brands.</p>
-    </header>
+      <h1 class="hero-title">
+        Frontend Engineer<br />
+        <span class="hero-accent">Specialized in GSAP &amp;<br/>High-Performance HTML5 Ads</span>
+      </h1>
 
-    <main class="portfolio-main">
-      <!-- V2 Section -->
-      <section class="campaign-section" id="v2-campaign">
-            <div class="section-header">
-                <div class="header-left">
-                    <h2 class="campaign-title">🔥 Flagship Campaign — HTML5 Rich Media (GSAP)</h2>
-                    <p class="meta-line">GSAP · SVG Animation · &lt;150kb · ClickTag · Multi-size system</p>
-                </div>
-            </div>
+      <p class="hero-value">
+        I don't just design banners — I engineer them. From Figma to production-ready, ad-network-compliant HTML5 code with pixel-perfect motion fidelity, delivered fast and at scale.
+      </p>
 
-        <div class="banners-container">
-          <!-- 300x250 -->
-          <div class="banner-card">
-            <div class="banner-label">
-              Inline Rectangle <span>300x250</span>
-            </div>
-            <div class="iframe-wrapper" style="width: calc(300px); height: calc(250px)">
-              <iframe
-                src="Banner4/mrec/index.html"
-                width="300"
-                height="250"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
-            </div>
+      <!-- Specific, impactful stats -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-value">200+</div>
+          <div class="stat-desc">HTML5 creatives optimized<br><strong>under 150kb</strong></div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-value">100%</div>
+          <div class="stat-desc">Ad-network compliance<br><strong>DV360 · GDN · Meta</strong></div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-value">4×</div>
+          <div class="stat-desc">Campaign iterations<br><strong>shipped on brief</strong></div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-value">0px</div>
+          <div class="stat-desc">Deviation from Figma<br><strong>pixel-perfect execution</strong></div>
+        </div>
+      </div>
+
+      <!-- Tech pills -->
+      <div class="hero-tech">
+        <span class="tech-pill">GSAP 3 / Club</span>
+        <span class="tech-pill">DrawSVG</span>
+        <span class="tech-pill">HTML5 / JS</span>
+        <span class="tech-pill">React</span>
+        <span class="tech-pill">TypeScript</span>
+        <span class="tech-pill">DCM Studio</span>
+        <span class="tech-pill">Figma</span>
+        <span class="tech-pill">After Effects</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+
+    <!-- ── FEATURED PROJECT ──────────────────────────── -->
+    <section class="section featured-section" id="featured">
+      <div class="section-head">
+        <div class="section-kicker">01 — Featured Work</div>
+        <h2 class="section-h2">Flagship GSAP Rich Media Campaign</h2>
+        <p class="section-sub">Full multi-format delivery system. One cohesive motion language across 6 IAB-standard sizes. SVG brushstroke handwriting animated with GSAP's DrawSVGPlugin — no CSS keyframes. Fully ClickTag-compliant and DCM-ready.</p>
+        <div class="project-tags">
+          <span class="ptag ptag-highlight">GSAP 3</span>
+          <span class="ptag">DrawSVG Plugin</span>
+          <span class="ptag">EB Garamond</span>
+          <span class="ptag">SVG Animation</span>
+          <span class="ptag">&lt; 150kb</span>
+          <span class="ptag">ClickTag</span>
+          <span class="ptag">DCM Ready</span>
+        </div>
+      </div>
+
+      <!-- Size Tabs -->
+      <div class="size-tabs" role="tablist">
+        <button class="tab-btn active" data-target="feat-mrec" role="tab" aria-selected="true">300×250</button>
+        <button class="tab-btn" data-target="feat-hpage" role="tab" aria-selected="false">300×600</button>
+        <button class="tab-btn" data-target="feat-sky" role="tab" aria-selected="false">160×600</button>
+        <button class="tab-btn" data-target="feat-lead" role="tab" aria-selected="false">728×90</button>
+        <button class="tab-btn" data-target="feat-mb1" role="tab" aria-selected="false">300×50</button>
+        <button class="tab-btn" data-target="feat-mb2" role="tab" aria-selected="false">320×50</button>
+      </div>
+
+      <!-- Preview pane -->
+      <div class="preview-pane">
+        <div class="preview-card">
+          <div class="preview-meta">
+            <span class="preview-label" id="preview-label-text">Inline Rectangle — 300 × 250</span>
+            <span class="preview-note">Live animation · ClickTag enabled</span>
           </div>
 
-          <!-- 300x600 -->
-          <div class="banner-card">
-            <div class="banner-label">Half-Page <span>300x600</span></div>
-            <div class="iframe-wrapper" style="width: 300px; height: calc(600px)">
-              <iframe
-                src="Banner4/hpage/index.html"
-                width="300"
-                height="600"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+          <!-- Each panel -->
+          <div class="panel active" id="feat-mrec">
+            <div class="iframe-shell" style="width:calc(300px);height:calc(250px)">
+              <iframe src="Banner4/mrec/index.html" width="300" height="250" scrolling="no" frameborder="0" title="Flagship 300x250"></iframe>
             </div>
           </div>
-
-          <!-- 160x600 -->
-          <div class="banner-card">
-            <div class="banner-label">Wide Skyscraper <span>160x600</span></div>
-            <div class="iframe-wrapper" style="width: calc(160px); height: calc(600px)">
-              <iframe
-                src="Banner4/sky/index.html"
-                width="160"
-                height="600"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+          <div class="panel" id="feat-hpage">
+            <div class="iframe-shell" style="width:calc(300px);height:calc(600px)">
+              <iframe src="Banner4/hpage/index.html" width="300" height="600" scrolling="no" frameborder="0" title="Flagship 300x600"></iframe>
             </div>
           </div>
-
-          <!-- 728x90 -->
-          <div class="banner-card">
-            <div class="banner-label">Leaderboard <span>728x90</span></div>
-            <div class="iframe-wrapper" style="width: calc(728px); height: calc(90px)">
-              <iframe
-                src="Banner4/lead/index.html"
-                width="728"
-                height="90"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+          <div class="panel" id="feat-sky">
+            <div class="iframe-shell" style="width:calc(160px);height:calc(600px)">
+              <iframe src="Banner4/sky/index.html" width="160" height="600" scrolling="no" frameborder="0" title="Flagship 160x600"></iframe>
             </div>
           </div>
-
-          <!-- 300x50 -->
-          <div class="banner-card">
-            <div class="banner-label">Mobile Banner <span>300x50</span></div>
-            <div class="iframe-wrapper" style="width: calc(300px); height: calc(50px)">
-              <iframe
-                src="Banner4/mb1/index.html"
-                width="300"
-                height="50"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+          <div class="panel" id="feat-lead">
+            <div class="iframe-shell" style="width:calc(728px);height:calc(90px)">
+              <iframe src="Banner4/lead/index.html" width="728" height="90" scrolling="no" frameborder="0" title="Flagship 728x90"></iframe>
             </div>
           </div>
-
-          <!-- 320x50 -->
-          <div class="banner-card">
-            <div class="banner-label">
-              Mobile Leaderboard <span>320x50</span>
+          <div class="panel" id="feat-mb1">
+            <div class="iframe-shell" style="width:calc(300px);height:calc(50px)">
+              <iframe src="Banner4/mb1/index.html" width="300" height="50" scrolling="no" frameborder="0" title="Flagship 300x50"></iframe>
             </div>
-            <div class="iframe-wrapper" style="width: calc(320px); height: calc(50px)">
-              <iframe
-                src="Banner4/mb2/index.html"
-                width="320"
-                height="50"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+          </div>
+          <div class="panel" id="feat-mb2">
+            <div class="iframe-shell" style="width:calc(320px);height:calc(50px)">
+              <iframe src="Banner4/mb2/index.html" width="320" height="50" scrolling="no" frameborder="0" title="Flagship 320x50"></iframe>
             </div>
           </div>
         </div>
-      </section>
 
-        <!-- HTML-3 Section -->
-        <section class="campaign-section" id="v3-campaign">
-            <div class="section-header">
-                <div class="header-left">
-                    <h2 class="campaign-title">Concept V3 — Layout & Copy Iteration</h2>
-                    <p class="meta-line">This concept went through multiple refresh cycles focusing on layout hierarchy, motion pacing, and message clarity for performance testing.</p>
-                </div>
-            </div>
-
-        <div class="banners-container">
-          <div class="banner-card">
-            <div class="banner-label">
-              Inline Rectangle <span>300x250</span>
-            </div>
-            <div class="iframe-wrapper" style="width: calc(300px); height: calc(250px)">
-              <iframe
-                src="Banner3/mrec/index.html"
-                width="300"
-                height="250"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
-            </div>
+        <!-- Sidebar detail -->
+        <aside class="project-detail">
+          <div class="detail-block">
+            <div class="detail-label">Deliverable</div>
+            <div class="detail-value">6-size HTML5 Rich Media System</div>
           </div>
-
-          <div class="banner-card">
-            <div class="banner-label">Half-Page <span>300x600</span></div>
-            <div class="iframe-wrapper" style="width: 300px; height: calc(600px)">
-              <iframe
-                src="Banner3/hpage/index.html"
-                width="300"
-                height="600"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
-            </div>
+          <div class="detail-block">
+            <div class="detail-label">Animation Engine</div>
+            <div class="detail-value">GSAP 3 + DrawSVGPlugin (Club)</div>
           </div>
-
-          <div class="banner-card">
-            <div class="banner-label">Wide Skyscraper <span>160x600</span></div>
-            <div class="iframe-wrapper" style="width: calc(160px); height: calc(600px)">
-              <iframe
-                src="Banner3/sky/index.html"
-                width="160"
-                height="600"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
-            </div>
+          <div class="detail-block">
+            <div class="detail-label">Typeface</div>
+            <div class="detail-value">EB Garamond · Google Fonts</div>
           </div>
+          <div class="detail-block">
+            <div class="detail-label">Ad Compliance</div>
+            <div class="detail-value">ClickTag v1 · DCM Studio</div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label">Weight</div>
+            <div class="detail-value">All sizes &lt; 150kb</div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label">Motion</div>
+            <div class="detail-value">SVG DrawSVG strokes, fade reveals, stagger sequences</div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-          <div class="banner-card">
-            <div class="banner-label">Leaderboard <span>728x90</span></div>
-            <div class="iframe-wrapper" style="width: calc(728px); height: calc(90px)">
-              <iframe
-                src="Banner3/lead/index.html"
-                width="728"
-                height="90"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+    <!-- ── ITERATION SERIES ──────────────────────────── -->
+    <section class="section iter-section" id="iteration">
+      <div class="section-head">
+        <div class="section-kicker">02 — Iteration Series</div>
+        <h2 class="section-h2">3 Concepts, 1 Brief — Showing Range &amp; Speed</h2>
+        <p class="section-sub">Real campaigns require rapid iteration without losing design cohesion. Each version below represents a separate refresh cycle — improving layout hierarchy, ISI scroll behavior, motion pacing, and message clarity based on stakeholder feedback.</p>
+      </div>
+
+      <!-- V3 -->
+      <div class="iter-row" id="v3-row">
+        <div class="iter-header">
+          <div class="iter-badge v3">V3 — Latest</div>
+          <div class="iter-body">
+            <h3 class="iter-title">Layout &amp; Copy Refinement</h3>
+            <p class="iter-desc">Sharpened ISI scroll behavior, tightened copy hierarchy for HCP audience, new ambient light treatment on background artwork.</p>
+            <div class="iter-tags">
+              <span class="ptag">GSAP</span><span class="ptag">CSS Animation</span><span class="ptag">ISI Scroll</span>
             </div>
           </div>
         </div>
-      </section>
-
-        <!-- HTML-2 Section -->
-        <section class="campaign-section" id="v2-concept-campaign">
-            <div class="section-header">
-                <div class="header-left">
-                    <h2 class="campaign-title">Concept V2 — Performance Refresh</h2>
-                    <p class="meta-line">This concept went through multiple refresh cycles focusing on layout hierarchy, motion pacing, and message clarity for performance testing.</p>
-                </div>
-            </div>
-
-        <div class="banners-container">
-          <div class="banner-card">
-            <div class="banner-label">
-              Inline Rectangle <span>300x250</span>
-            </div>
-            <div class="iframe-wrapper" style="width: calc(300px); height: calc(250px)">
-              <iframe
-                src="Banner2/mrec/index.html"
-                width="300"
-                height="250"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+        <div class="iter-grid">
+          <div class="iter-card">
+            <div class="iter-dim">300 × 250</div>
+            <div class="iframe-shell" style="width:calc(300px);height:calc(250px)">
+              <iframe src="Banner3/mrec/index.html" width="300" height="250" scrolling="no" frameborder="0" title="V3 300x250"></iframe>
             </div>
           </div>
-
-          <div class="banner-card">
-            <div class="banner-label">Half-Page <span>300x600</span></div>
-            <div class="iframe-wrapper" style="width: 300px; height: calc(600px)">
-              <iframe
-                src="Banner2/hpage/index.html"
-                width="300"
-                height="600"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+          <div class="iter-card">
+            <div class="iter-dim">300 × 600</div>
+            <div class="iframe-shell" style="width:calc(300px);height:calc(600px)">
+              <iframe src="Banner3/hpage/index.html" width="300" height="600" scrolling="no" frameborder="0" title="V3 300x600"></iframe>
             </div>
           </div>
-
-          <div class="banner-card">
-            <div class="banner-label">Wide Skyscraper <span>160x600</span></div>
-            <div class="iframe-wrapper" style="width: calc(160px); height: calc(600px)">
-              <iframe
-                src="Banner2/sky/index.html"
-                width="160"
-                height="600"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+          <div class="iter-card">
+            <div class="iter-dim">160 × 600</div>
+            <div class="iframe-shell" style="width:calc(160px);height:calc(600px)">
+              <iframe src="Banner3/sky/index.html" width="160" height="600" scrolling="no" frameborder="0" title="V3 160x600"></iframe>
             </div>
           </div>
-
-          <div class="banner-card">
-            <div class="banner-label">Leaderboard <span>728x90</span></div>
-            <div class="iframe-wrapper" style="width: calc(728px); height: calc(90px)">
-              <iframe
-                src="Banner2/lead/index.html"
-                width="728"
-                height="90"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+          <div class="iter-card">
+            <div class="iter-dim">728 × 90</div>
+            <div class="iframe-shell" style="width:calc(728px);height:calc(90px)">
+              <iframe src="Banner3/lead/index.html" width="728" height="90" scrolling="no" frameborder="0" title="V3 728x90"></iframe>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-        <!-- HTML Section -->
-        <section class="campaign-section" id="original-campaign">
-            <div class="section-header">
-                <div class="header-left">
-                    <h2 class="campaign-title">Original Concept — Initial Launch</h2>
-                    <p class="meta-line">This concept went through multiple refresh cycles focusing on layout hierarchy, motion pacing, and message clarity for performance testing.</p>
-                </div>
-            </div>
-
-        <div class="banners-container">
-          <div class="banner-card">
-            <div class="banner-label">
-              Inline Rectangle <span>300x250</span>
-            </div>
-            <div class="iframe-wrapper" style="width: calc(300px); height: calc(250px)">
-              <iframe
-                src="Banner1/mrec/index.html"
-                width="300"
-                height="250"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
-            </div>
-          </div>
-
-          <div class="banner-card">
-            <div class="banner-label">Half-Page <span>300x600</span></div>
-            <div class="iframe-wrapper" style="width: 300px; height: calc(600px)">
-              <iframe
-                src="Banner1/hpage/index.html"
-                width="300"
-                height="600"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
-            </div>
-          </div>
-
-          <div class="banner-card">
-            <div class="banner-label">Wide Skyscraper <span>160x600</span></div>
-            <div class="iframe-wrapper" style="width: calc(160px); height: calc(600px)">
-              <iframe
-                src="Banner1/sky/index.html"
-                width="160"
-                height="600"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
-            </div>
-          </div>
-
-          <div class="banner-card">
-            <div class="banner-label">Leaderboard <span>728x90</span></div>
-            <div class="iframe-wrapper" style="width: calc(728px); height: calc(90px)">
-              <iframe
-                src="Banner1/lead/index.html"
-                width="728"
-                height="90"
-                scrolling="no"
-                frameborder="0"
-              ></iframe>
+      <!-- V2 -->
+      <div class="iter-row" id="v2-row">
+        <div class="iter-header">
+          <div class="iter-badge v2">V2</div>
+          <div class="iter-body">
+            <h3 class="iter-title">Performance Refresh</h3>
+            <p class="iter-desc">Warmer palette, adjusted motion pacing based on initial performance data, improved CTA click-zone sizing.</p>
+            <div class="iter-tags">
+              <span class="ptag">GSAP</span><span class="ptag">Performance A/B</span>
             </div>
           </div>
         </div>
-      </section>
-        <section class="additional-experience">
-            <h3>Additional Experience</h3>
-            <p>Over the last few years, I’ve built 200+ HTML5 banners across industries, including multiple ad sizes, localized versions, dynamic feeds, and rapid-turnaround refreshes.</p>
-            <p>This portfolio highlights representative examples rather than every execution.</p>
-        </section>
-
-    </main>
-    
-    <footer class="portfolio-footer">
-        <div class="footer-content">
-            <div class="footer-logo">Aman Yadav<span class="highlight">.</span></div>
-            <p>Motion & Creative Designer</p>
-            <p class="copyright">&copy; 2026 Aman Yadav</p>
+        <div class="iter-grid">
+          <div class="iter-card">
+            <div class="iter-dim">300 × 250</div>
+            <div class="iframe-shell" style="width:calc(300px);height:calc(250px)">
+              <iframe src="Banner2/mrec/index.html" width="300" height="250" scrolling="no" frameborder="0" title="V2 300x250"></iframe>
+            </div>
+          </div>
+          <div class="iter-card">
+            <div class="iter-dim">300 × 600</div>
+            <div class="iframe-shell" style="width:calc(300px);height:calc(600px)">
+              <iframe src="Banner2/hpage/index.html" width="300" height="600" scrolling="no" frameborder="0" title="V2 300x600"></iframe>
+            </div>
+          </div>
+          <div class="iter-card">
+            <div class="iter-dim">160 × 600</div>
+            <div class="iframe-shell" style="width:calc(160px);height:calc(600px)">
+              <iframe src="Banner2/sky/index.html" width="160" height="600" scrolling="no" frameborder="0" title="V2 160x600"></iframe>
+            </div>
+          </div>
+          <div class="iter-card">
+            <div class="iter-dim">728 × 90</div>
+            <div class="iframe-shell" style="width:calc(728px);height:calc(90px)">
+              <iframe src="Banner2/lead/index.html" width="728" height="90" scrolling="no" frameborder="0" title="V2 728x90"></iframe>
+            </div>
+          </div>
         </div>
-    </footer>
-  </body>
+      </div>
+
+      <!-- V1 -->
+      <div class="iter-row" id="v1-row">
+        <div class="iter-header">
+          <div class="iter-badge v1">V1 — Original</div>
+          <div class="iter-body">
+            <h3 class="iter-title">Initial Launch Concept</h3>
+            <p class="iter-desc">Established the creative direction — typeface pairing, animation conventions, and pharma-compliant ISI behavior carried through subsequent iterations.</p>
+            <div class="iter-tags">
+              <span class="ptag">GSAP</span><span class="ptag">Pharma ISI</span><span class="ptag">Initial Brief</span>
+            </div>
+          </div>
+        </div>
+        <div class="iter-grid">
+          <div class="iter-card">
+            <div class="iter-dim">300 × 250</div>
+            <div class="iframe-shell" style="width:calc(300px);height:calc(250px)">
+              <iframe src="Banner1/mrec/index.html" width="300" height="250" scrolling="no" frameborder="0" title="V1 300x250"></iframe>
+            </div>
+          </div>
+          <div class="iter-card">
+            <div class="iter-dim">300 × 600</div>
+            <div class="iframe-shell" style="width:calc(300px);height:calc(600px)">
+              <iframe src="Banner1/hpage/index.html" width="300" height="600" scrolling="no" frameborder="0" title="V1 300x600"></iframe>
+            </div>
+          </div>
+          <div class="iter-card">
+            <div class="iter-dim">160 × 600</div>
+            <div class="iframe-shell" style="width:calc(160px);height:calc(600px)">
+              <iframe src="Banner1/sky/index.html" width="160" height="600" scrolling="no" frameborder="0" title="V1 160x600"></iframe>
+            </div>
+          </div>
+          <div class="iter-card">
+            <div class="iter-dim">728 × 90</div>
+            <div class="iframe-shell" style="width:calc(728px);height:calc(90px)">
+              <iframe src="Banner1/lead/index.html" width="728" height="90" scrolling="no" frameborder="0" title="V1 728x90"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TECH STACK ────────────────────────────────── -->
+    <section class="section stack-section" id="stack">
+      <div class="section-head">
+        <div class="section-kicker">03 — Tech Stack &amp; Experience</div>
+        <h2 class="section-h2">Engineering Tools &amp; Capabilities</h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-col">
+          <div class="stack-col-title">Animation &amp; Motion</div>
+          <ul class="stack-list">
+            <li><span class="stack-dot"></span>GSAP 3 (Club — DrawSVG, SplitText, MorphSVG)</li>
+            <li><span class="stack-dot"></span>CSS Animations &amp; Keyframes</li>
+            <li><span class="stack-dot"></span>SVG Path Animation</li>
+            <li><span class="stack-dot"></span>Adobe After Effects</li>
+            <li><span class="stack-dot"></span>Adobe Animate (HTML5 Canvas)</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <div class="stack-col-title">Frontend Engineering</div>
+          <ul class="stack-list">
+            <li><span class="stack-dot"></span>HTML5 / CSS3 / Vanilla JS</li>
+            <li><span class="stack-dot"></span>React &amp; TypeScript</li>
+            <li><span class="stack-dot"></span>Next.js</li>
+            <li><span class="stack-dot"></span>Tailwind CSS</li>
+            <li><span class="stack-dot"></span>Framer Motion</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <div class="stack-col-title">Ad-Tech &amp; Compliance</div>
+          <ul class="stack-list">
+            <li><span class="stack-dot"></span>Google Campaign Manager (DCM)</li>
+            <li><span class="stack-dot"></span>Google Web Designer / Studio</li>
+            <li><span class="stack-dot"></span>DoubleClick ClickTag Standard</li>
+            <li><span class="stack-dot"></span>IAB Standard Ad Sizes</li>
+            <li><span class="stack-dot"></span>Pharma / HCP ISI Compliance</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <div class="stack-col-title">Design &amp; Workflow</div>
+          <ul class="stack-list">
+            <li><span class="stack-dot"></span>Figma (Components &amp; Prototyping)</li>
+            <li><span class="stack-dot"></span>Adobe Creative Suite</li>
+            <li><span class="stack-dot"></span>Git / GitHub</li>
+            <li><span class="stack-dot"></span>Netlify / Vercel</li>
+            <li><span class="stack-dot"></span>MLR / Regulatory Review Process</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Broader experience note -->
+      <div class="exp-note">
+        <div class="exp-note-icon">📋</div>
+        <div>
+          <strong>200+ HTML5 creatives delivered</strong> across healthcare, pharma, consumer tech, and finance verticals — spanning multiple ad sizes, localized versions, dynamic feed integrations, and rapid-turnaround refreshes for global brands. This portfolio is a curated sample.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── CONTACT / CTA ─────────────────────────────── -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-cta">
+      <h2 class="cta-heading">Looking for a hybrid dev<br />who understands motion?</h2>
+      <p class="cta-sub">I bring both the design sensibility and the engineering precision to ship pixel-perfect, performant HTML5 experiences on time.</p>
+      <div class="cta-actions">
+        <a href="https://www.linkedin.com/in/aman-yadav-9144021a3/" target="_blank" rel="noopener" class="btn btn-primary" id="btn-linkedin">LinkedIn →</a>
+        <a href="Aman Yadav CV.pdf" download="Aman Yadav CV.pdf" class="btn btn-ghost" id="btn-resume">⬇ Download CV</a>
+        <a href="https://github.com/AmanYadav007" target="_blank" rel="noopener" class="btn btn-ghost" id="btn-github">GitHub</a>
+        <a href="https://x.com/Amanyad57536099" target="_blank" rel="noopener" class="btn btn-ghost" id="btn-twitter">X / Twitter</a>
+        <a href="https://www.instagram.com/i_m.aman.yadav/" target="_blank" rel="noopener" class="btn btn-ghost" id="btn-instagram">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Aman Yadav · Motion &amp; Frontend Engineer</span>
+      <span class="footer-copy">© 2026</span>
+    </div>
+  </footer>
+
+  <!-- ── TAB SWITCHING SCRIPT ──────────────────────── -->
+  <script>
+    const tabLabels = {
+      'feat-mrec':  'Inline Rectangle — 300 × 250',
+      'feat-hpage': 'Half-Page — 300 × 600',
+      'feat-sky':   'Wide Skyscraper — 160 × 600',
+      'feat-lead':  'Leaderboard — 728 × 90',
+      'feat-mb1':   'Mobile Banner — 300 × 50',
+      'feat-mb2':   'Mobile Leaderboard — 320 × 50',
+    };
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+
+        // Update buttons
+        document.querySelectorAll('.tab-btn').forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Update panels
+        document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+        document.getElementById(target).classList.add('active');
+
+        // Update label
+        document.getElementById('preview-label-text').textContent = tabLabels[target] || '';
+      });
+    });
+  </script>
+
+</body>
 </html>
